@@ -1,6 +1,6 @@
 # Teks deskripsi
 
-Toko X memiliki banyak tenaga penjualan (salesperson) untuk menjual beberapa komoditasnya di sekitar dunia. Kebijakan toko menyatakan bahwa setiap tenaga penjualan diizinkan untuk menjual komoditas toko di setiap wilayah. Lebih lanjut lagi, beberapa tenaga penjualan diizinkan untuk menjual komoditas di wilayah yang sama. Dalam kasus ini, setiap tenaga penjualan dapat mematok harga yang berbeda untk setiap jenis komoditas.
+Toko X memiliki banyak tenaga penjualan (salesperson) yang bertugas menjual berbagai komoditasnya di berbagai wilayah di dunia. Kebijakan toko menetapkan bahwa setiap tenaga penjualan diperbolehkan menjual komoditas toko di setiap wilayah. Selain itu, beberapa tenaga penjualan diperbolehkan menjual komoditas yang sama di wilayah yang sama. Dalam kasus ini, setiap tenaga penjualan dapat menetapkan harga yang berbeda untuk setiap jenis komoditas.
 
 # ERD Acuan
 
@@ -8,38 +8,27 @@ Toko X memiliki banyak tenaga penjualan (salesperson) untuk menjual beberapa kom
 @startchen
 
 entity Komoditas {
-Nomor
+ID
 Nama
 }
 
 entity Salesperson {
-Nomor
+ID
 Nama
 }
 
 entity Wilayah {
-Nomor
+ID
 Nama
 }
 
-relationship KomSales {
-}
-
-relationship Komwil {
+relationship jual {
 Harga
 }
 
-relationship SalesWil {
-}
-
-Salesperson -N- SalesWil
-SalesWil -M- Wilayah
-
-Komoditas -N- Komwil 
-Komwil -M- Wilayah
-
-Komoditas -N- KomSales
-KomSales -M- Salesperson
+jual -N- Komoditas
+jual -N- Salesperson
+jual -N- Wilayah
 
 @endchen
 ```
