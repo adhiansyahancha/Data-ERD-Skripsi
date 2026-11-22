@@ -2,6 +2,8 @@
 
 Hotel memiliki setidaknya satu atau beberapa kamar, dan setiap kamar pada gilirannya merupakan bagian dari tepat satu hotel. Setiap kamar memiliki nomor kamar. Tamu dapat menginap di hotel dan memesan satu atau beberapa kamar. Sebaliknya, sebuah kamar pada gilirannya dapat dipesan oleh nol atau lebih tamu.
 
+(Catatan: Pengarang asli menyajikan output buatan LLM yang dianggap salah, kemudian memberikan penjelasan yang benar. Data di sini telah dimodifikasi 
+
 # ERD Acuan
 
 ```uml
@@ -19,7 +21,7 @@ relationship memesan {
 relationship memiliki {
 }
 
-Tamu -1- memesan
+Tamu -N- memesan
 memesan -N- Kamar
 
 Hotel -1- memiliki
