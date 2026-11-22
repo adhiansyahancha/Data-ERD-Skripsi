@@ -23,4 +23,4 @@ mengawasi -N- Pegawai
 
 # Lisensi
 
-[Ron McFadyen dari ACS Department, University of Winnipeg]([https://emisa-journal.org/emisa/article/view/318](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1554089/full)) mengizinkan di bawah [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[Ron McFadyen dari Applied Computer Science Department, University of Winnipeg](https://www.acs.uwinnipeg.ca/rmcfadyen/CreativeCommons/) mengizinkan di bawah [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
