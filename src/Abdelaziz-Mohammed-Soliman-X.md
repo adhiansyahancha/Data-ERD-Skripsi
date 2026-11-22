@@ -35,4 +35,4 @@ jual -N- Wilayah
 
 # Lisensi
 
-[Frontiers in Education]([https://emisa-journal.org/emisa/article/view/318](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1554089/full)) mengizinkan di bawah [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
+[Frontiers in Education](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1554089/full) mengizinkan di bawah [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
