@@ -1,6 +1,6 @@
 # Teks deskripsi
 
-Toko Y memiliki banyak tenaga penjualan (salesperson) untuk menjual beberapa komoditasnya di sekitar dunia. Kebijakan toko menyatakan bahwa setiap wilayah hanya memiliki satu tenaga penjualan yang menjual seluruh komoditas toko secara eksklusif. Seorang tenaga penjualan diizinkan untuk mendistribusikan di banyak wilayah. Harga setiap komoditas diatur berbeda untuk setiap wilayah.
+Toko Y memiliki banyak tenaga penjualan (salesperson) yang bertugas menjual berbagai komoditasnya di berbagai wilayah di dunia. Kebijakan toko menetapkan bahwa setiap wilayah hanya dilayani oleh satu tenaga penjualan, yang bertugas menjual seluruh komoditas toko secara eksklusif di wilayah tersebut. Seorang tenaga penjualan diperbolehkan mendistribusikan komoditas di banyak wilayah. Harga setiap komoditas ditetapkan secara berbeda di setiap wilayah.
 
 # ERD Acuan
 
