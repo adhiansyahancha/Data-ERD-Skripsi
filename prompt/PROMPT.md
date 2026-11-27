@@ -1,42 +1,51 @@
-Asumsikan definisi dari Entity-Relationship (ERD) sebagai berikut:
-ERD dibuka dengan `@startchen` dan ditutup dengan `@endchen`. 
-Untuk menyatakan entitas: `entity Bangunan {}`, `entity Orang {}`. 
-Untuk menyatakan hubungan: `relationship dimiliki {}`. 
-Untuk menyatakan atribut, tulis di dalam kurung elemen: `entity Bangunan { nama, lokasi }`, `entity Orang { nama { depan, belakang } }`. 
-Untuk menghubungkan antarentitas, tuliskan dua pernyataan: `Bangunan -N- dimiliki` dan `dimiliki -1- Orang`
-Untuk menentukan kardinalitas, terdapat 4 jenis: `-1-` berarti maksimal satu, minimal nol (0..1),  `-N-` berarti maksimal banyak, minimal nol (0..N), `=1=` berarti maksimal satu, minimal satu (1..1),  `=N=` berarti maksimal banyak, minimal satu (1..N).
+Assume the following definition of an Entity-Relationship Diagram (ERD):
+An ERD begins with `@startchen` and ends with `@endchen`.
+To declare an entity: `entity Building {}`, `entity Person {}`.
+To declare a relationship: `relationship owned {}`.
+To declare attributes, write them inside the element’s braces: 
+`entity Building { name, location }`, `entity Person { name { first, last } }`.
+To establish a relationship between entities, write two statements: 
+`Building -N- owned` and `owned -1- Person`
+To specify cardinality, there are 4 types: 
+`-1-` means at most one, at least zero (0..1),
+`-N-` means at most many, at least zero (0..N), 
+`=1=` means at most one, at least one (1..1),  
+`=N=` means at most many, at least one (1..N).
+If an element does not have any attributes, the braces it must be written on two lines with 
+the closing curly brace on a new line, so DO NOT write them side by side as `{}`.
 
-Berikut adalah contoh ERD, yang menyatakan bahwa Orang memiliki nol
-atau beberapa Mobil dan bahwa Mobil dapat diparkir di satu Garasi. Selain itu, dinyatakan bahwa
-Mobil harus selalu dimiliki oleh setidaknya satu orang:
+Here is an example of an ERD, which expresses that Persons own no
+or several cars and that cars may be parked in one garage.
+Further that cars always have to be owned by at least one person:
 
 ```uml
 @startchen
 
-entity Orang {
-  Nama
+entity Person {
+  Name
 }
-entity Mobil {
-  NomorPlat
+entity Car {
+  NumberPlate
 }
-entity Garasi {
-  NomorGarasi
+entity Garage {
+  GarageNo
 }
 
-relationship memiliki {}
-relationship diparkir_di {}
+relationship owns {
+}
+relationship parked_in {
+}
 
-Orang -N- memiliki
-memiliki =N= Mobil
+Person -N- owns
+owns =N= Car
 
-Mobil -1- diparkir_di
-diparkir_di -N- Garasi
+Car -1- parked_in
+parked_in -N- Garage
 
 @endchen
 ```
 
-Buatkan ERD menggunakan sintaksis tersebut untuk skenario berikut dan jangan
-menambahkan informasi apa pun yang tidak dideskripsikan di sini dan jangan menambahkan
-penjelasan apa pun:
-
-(Deskripsi tugas taruh di sini)
+Create a new ER diagram using this syntax
+for the following scenario and do not add any
+information that is not described here and do
+not add any explanations:
