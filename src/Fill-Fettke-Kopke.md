@@ -1,31 +1,30 @@
 # Teks deskripsi
 
-Hotel memiliki setidaknya satu atau beberapa kamar, dan setiap kamar pada gilirannya merupakan bagian dari tepat satu hotel. Setiap kamar memiliki nomor kamar. Tamu dapat menginap di hotel dan memesan satu atau beberapa kamar. Sebaliknya, sebuah kamar pada gilirannya dapat dipesan oleh nol atau lebih tamu.
-
-(Catatan: Pengarang asli menyajikan output buatan LLM yang dianggap salah, kemudian memberikan penjelasan yang benar. Data di sini telah dimodifikasi mengikuti konvensi data lain)
+Hotels have at least one or several rooms and each room is in turn part of exactly one hotel. Each room has a room number. Guests may stay in a hotel and book one or several rooms. A room may in turn be booked by none or more guests.
 
 # ERD Acuan
 
 ```uml
 @startchen
 
-entity Tamu {
-}
-entity Kamar {
-NomorKamar
-}
 entity Hotel {
 }
-relationship memesan {
+entity Room {
+  RoomNumber
 }
-relationship memiliki {
+entity Guest {
 }
 
-Tamu -N- memesan
-memesan -N- Kamar
+relationship has {
+}
+relationship books {
+}
 
-Hotel -1- memiliki
-memiliki -N- Kamar
+Hotel =N= has
+has =1= Room
+
+Guest -N- books
+books -N- Room
 
 @endchen
 ```
